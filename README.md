@@ -1,8 +1,9 @@
 Easiest way:
 1. Download everything and then drop into vs code
 2. Create new terminal
-3. Write 'npm run dev'
-4. If it throws error try typing 'npm i' first and then repeat step 3.
+3. Then type 'npm i' and wait untill end of intallation
+4. Type 'npm i react-icons' and wait untill end of installation
+5. And finally type 'npm run dev'
 
 
 # React + TypeScript + Vite
