@@ -1,0 +1,375 @@
+header {
+  width: 100%;
+  box-shadow: 5px 7px 20px -2px rgba(34, 60, 80, 0.4);
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-around;
+  height: 50px;
+  align-items: center;
+  background: white;
+  font-size: 20px;
+  position: relative;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+header>div>ul>span {
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+
+
+header>div>ul>span:hover {
+  letter-spacing: 5px;
+}
+
+header:hover {
+  background: #000;
+  color: magenta;
+  box-shadow: 5px 7px 20px 2px rgba(255, 0, 255, 0.5);
+}
+
+
+
+* {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+
+}
+
+body {
+  user-select: none;
+  background: white;
+  overflow-x: hidden;
+}
+
+li {
+  list-style: none;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+li:hover {
+  letter-spacing: 3px;
+}
+
+ul {
+  display: flex;
+  gap: 10px;
+}
+
+.cartImg {
+  margin-right: 20px;
+  margin-top: 5px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.cartImg:hover {
+  transform: rotate(15deg);
+}
+
+.cartImg:active {
+  color: pink;
+  transition: 0.05s;
+}
+
+.cartDiv {
+  position: relative;
+  top: 100px;
+  width: 400px;
+  box-shadow: 5px 7px 33px -2px rgba(34, 60, 80, 0.4);
+  background: white;
+  padding: 40px;
+  padding-bottom: 0px;
+  transition: 0.2s;
+}
+
+.orderItem>div {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.orderItem {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-radius: 20px;
+  box-shadow: 5px 7px 33px -1px rgba(34, 60, 80, 0.4);
+  transition: 0.1s;
+  cursor: pointer;
+  position: relative;
+
+}
+
+.orderItem:hover {
+  background: #000;
+  color: magenta;
+  box-shadow: 5px 7px 33px 10px rgba(255, 0, 255, 0.4);
+
+}
+
+.orderItem>div>img {
+  margin-left: 20px;
+}
+
+.orderItemImgDiv>img {
+  object-fit: contain;
+  width: 200px;
+}
+
+.orderItemTitleDiv {
+  width: 100%;
+}
+
+.orderItemTitleDiv>h1 {
+  margin: 0;
+}
+
+.cartEmpty,
+.cartDiv {
+  position: absolute;
+  right: 10px;
+  z-index: 100;
+}
+
+.itemDiv {
+  width: 300px;
+  height: 570px;
+  box-shadow: 10px 10px 33px 2px rgba(34, 60, 80, 0.26);
+  border-radius: 20px;
+  padding: 10px 20px;
+  transition: 0.15s;
+  position: relative;
+  cursor: pointer;
+  z-index: 98;
+}
+
+.itemDiv>h1,
+h2 {
+  margin: 0;
+  transition: 0.2s;
+}
+
+.itemDiv>img {
+  width: 400px;
+}
+
+/* .itemDiv>* {
+  border: solid black 2px;
+} */
+
+.itemDiv>h2:hover {
+  letter-spacing: 3px;
+}
+
+.itemDiv>h1:hover {
+  letter-spacing: 3px;
+}
+
+.itemWrapperDiv:hover {
+  background: black;
+  color: magenta;
+  box-shadow: 5px 7px 20px 2px rgba(255, 0, 255, 0.5);
+}
+
+.itemDiv>img {
+  height: 200px;
+  object-fit: contain;
+}
+
+.itemDiv>b {
+  position: absolute;
+  bottom: 20px;
+  margin-top: 50px;
+}
+
+.itemsDiv {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
+}
+
+.addToCartBtn {
+  position: absolute;
+  right: 17.5px;
+  top: 10px;
+  font-size: 35px;
+  transition: 0.2s;
+}
+
+.itemDiv>span:hover {
+  transform: rotate(90deg)
+}
+
+.yourOrderSpan {
+  margin: 0;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.emptyCartHint {
+  font-size: 17px;
+  margin-bottom: 40px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.emptyCartHint:hover {
+  letter-spacing: 3px;
+}
+
+.yourOrderSpan {
+  font-size: 25px;
+}
+
+.fullItemWrapper {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.683);
+  z-index: 101;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fullItem {
+  background: white;
+  width: 300px;
+  padding: 40px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.6s;
+  position: relative;
+}
+
+.fullItem>h1 {
+  margin: 0;
+}
+
+.fullItem>img {
+  object-fit: contain;
+  width: 200px;
+}
+
+.fullItem:hover {
+  color: magenta;
+  background-color: black;
+}
+
+.fullItem .exitBtn {
+  position: absolute;
+  top: 0px;
+  right: 17px;
+  font-size: 40px;
+  transform: rotate(45deg);
+  transition: 0.2s;
+}
+
+.fullItem .addBtn {
+  position: absolute;
+  font-size: 40px;
+  transition: 0.2s;
+  top: 0;
+  left: 17px;
+}
+
+.fullItem .exitBtn:hover {
+  transform: rotate(135deg)
+}
+
+.fullItem .addBtn:hover {
+  transform: rotate(90deg)
+}
+
+.cartFooter {
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+}
+
+.exitBtnCart {
+  font-size: 40px;
+  transform: rotate(45deg);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.exitBtnCart:hover {
+  color: magenta;
+  transform: rotate(135deg)
+}
+
+.cartFooter .total {
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.trashIcon {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.addToCartBtn {
+  position: absolute;
+}
+
+.itemWrapperDiv {
+  position: relative;
+  border-radius: 20px;
+}
+
+.addToCartBtn {
+  z-index: 99;
+  cursor: pointer;
+}
+
+.addToCartBtn:hover {
+  transform: rotate(90deg);
+}
+
+.orderWrapper {
+  position: relative;
+  border-radius: 20px;
+}
+
+.orderWrapper:hover {
+  background: black;
+  border-radius: 20px;
+}
+
+.orderWrapper:hover .trashIcon {
+  color: magenta;
+}
+
+.orderWrapper:hover .orderItem {
+  color: magenta;
+}
+
+.orderItem>span {
+  border: black solid 2px;
+}
+
+.orderItemTitleDiv>h1 {
+  text-align: center;
+}
