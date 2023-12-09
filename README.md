@@ -1,3 +1,10 @@
+Easiest way:
+1. Download everything and then drop into vs code
+2. Create new terminal
+3. Write 'npm run dev'
+4. If it throws error try typing 'npm i' first and then repeat step 3.
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
